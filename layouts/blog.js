@@ -4,14 +4,16 @@ import { parseISO, format } from "date-fns";
 import Container from "components/Container";
 
 const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(`https://leerob.io/blog/${slug}`)}`;
+  `https://mobile.twitter.com/search?q=${encodeURIComponent(
+    `https://picturetalkies.in/review/${slug}`
+  )}`;
 
 export default function BlogLayout({ children, frontMatter }) {
   return (
     <Container
-      title={`${frontMatter.title} – Lee Robinson`}
+      title={`${frontMatter.title} – Picture Talkies`}
       description={frontMatter.summary}
-      image={`https://leerob.io${frontMatter.image}`}
+      image={`https://picturetalkies.in${frontMatter.image}`}
       date={new Date(frontMatter.publishedAt).toISOString()}
       type="article"
     >
@@ -21,16 +23,10 @@ export default function BlogLayout({ children, frontMatter }) {
         </h1>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full mt-2">
           <div className="flex items-center">
-            <Image
-              alt="Lee Robinson"
-              height={24}
-              width={24}
-              src="/avatar.jpg"
-              className="rounded-full"
-            />
+            <Image alt="Author" height={24} width={24} src="/avatar.jpg" className="rounded-full" />
             <p className="text-sm text-gray-700 dark:text-gray-300 ml-2">
               {frontMatter.by}
-              {"Lee Robinson / "}
+              {`${frontMatter.authorName} / `}
               {format(parseISO(frontMatter.publishedAt), "MMMM dd, yyyy")}
             </p>
           </div>

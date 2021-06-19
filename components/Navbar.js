@@ -9,8 +9,8 @@ export default function Navbar() {
     setMenu(!menu);
   };
   return (
-    <nav className="bg-white shadow dark:bg-gray-800">
-      <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+    <nav className="bg-white shadow dark:bg-gray-800 sticky-nav md:my-8 bg-opacity-60">
+      <div className="container px-6 py-4 mx-auto max-w-5xl md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <Link href="/">
             <a className="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300">
@@ -36,23 +36,20 @@ export default function Navbar() {
         </div>
 
         <div className={`${menu ? "block" : "hidden"} items-center md:flex`}>
-          <div className="flex flex-col items-start md:flex-row">
+          <div className="flex flex-col space-y-4 mt-4 sm:space-y-0 sm:mt-0 items-start md:flex-row">
             <Link href="/review">
-              <a
-                className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
-                href="/review"
-              >
+              <a className="my-1 text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
                 Review
               </a>
             </Link>
             <Link href="/about">
-              <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
+              <a className="my-1 text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
                 About
               </a>
             </Link>
 
             <Link href="/">
-              <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
+              <a className="my-1 text-lg font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
                 Home
               </a>
             </Link>

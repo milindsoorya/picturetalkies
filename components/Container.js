@@ -24,12 +24,12 @@ export default function Container(props) {
         <meta property="og:url" content={`${baseURL}${router.asPath}`} />
         <link rel="canonical" href={`${baseURL}${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Lee Robinson" />
+        <meta property="og:site_name" content="Picture Talkies" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@leeerob" />
+        <meta name="twitter:site" content="@picturetalkies1" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
@@ -38,7 +38,7 @@ export default function Container(props) {
       <Navbar />
       <main
         id="skip"
-        className="flex flex-col flex-grow justify-center px-8 bg-white dark:bg-black"
+        className="flex flex-col flex-grow max-w-5xl mx-auto justify-center px-8 bg-white dark:bg-black"
       >
         {children}
       </main>
