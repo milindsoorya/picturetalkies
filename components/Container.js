@@ -6,7 +6,7 @@ import Footer from "components/Footer";
 export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
-  const baseURL = "https://picturetalkies.vercel.app";
+  const baseURL = "https://picturetalkies.in";
   const meta = {
     title: "Picture Talkies - A Community for Cinephiles",
     description: `A Community for Cinephiles. Exlporing films, music and art.`,
