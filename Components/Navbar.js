@@ -12,14 +12,11 @@ export default function Navbar() {
     <nav className="bg-white shadow dark:bg-gray-800">
       <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
-          <div>
-            <a
-              className="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300"
-              href="/"
-            >
-              THE CINEPHILE
+          <Link href="/">
+            <a className="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300">
+              PICTURE TALKIES
             </a>
-          </div>
+          </Link>
 
           <div className="flex md:hidden">
             <button
@@ -40,25 +37,25 @@ export default function Navbar() {
 
         <div className={`${menu ? "block" : "hidden"} items-center md:flex`}>
           <div className="flex flex-col items-start md:flex-row">
-            <a
-              className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
-              href="/"
-            >
-              Home
-            </a>
+            <Link href="/review">
+              <a
+                className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
+                href="/review"
+              >
+                Review
+              </a>
+            </Link>
+            <Link href="/about">
+              <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
+                About
+              </a>
+            </Link>
 
-            <a
-              className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
-              href="/reviews"
-            >
-              Reviews
-            </a>
-            <a
-              className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
-              href="#"
-            >
-              About
-            </a>
+            <Link href="/">
+              <a className="my-1 text-sm font-medium text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0">
+                Home
+              </a>
+            </Link>
           </div>
         </div>
       </div>

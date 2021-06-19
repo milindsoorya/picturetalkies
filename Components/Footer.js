@@ -5,7 +5,7 @@ export default function Footer() {
         href="/"
         className="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
       >
-        THE CINEPHILE
+        PICTURE TALKIES
       </a>
 
       <p className="py-2 text-gray-800 dark:text-white sm:py-0">All rights reserved</p>

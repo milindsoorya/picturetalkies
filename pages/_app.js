@@ -1,14 +1,7 @@
-import MainLayout from "Layouts/MainLayout";
-
-import "Assets/Sass/Style.scss";
-import "Assets/tailwind.css";
+import "styles/global.scss";
 
 function MyApp({ Component, pageProps }) {
-  return (
-    <MainLayout>
-      <Component {...pageProps} />
-    </MainLayout>
-  );
+  return <Component {...pageProps} />;
 }
 
 export default MyApp;

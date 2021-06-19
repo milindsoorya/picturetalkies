@@ -1,7 +1,6 @@
 const path = require("path");
 
 module.exports = {
-  target: "serverless",
   future: {
     webpack5: true,
   },
