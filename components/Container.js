@@ -38,7 +38,7 @@ export default function Container(props) {
       <Navbar />
       <main
         id="skip"
-        className="flex flex-col flex-grow max-w-5xl mx-auto justify-center px-8 bg-white dark:bg-black"
+        className="flex flex-col flex-grow max-w-6xl mx-auto justify-center px-8 bg-white dark:bg-black"
       >
         {children}
       </main>

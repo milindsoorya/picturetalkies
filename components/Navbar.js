@@ -10,7 +10,7 @@ export default function Navbar() {
   };
   return (
     <nav className="bg-white shadow dark:bg-gray-800 sticky-nav md:my-8 bg-opacity-60">
-      <div className="container px-6 py-4 mx-auto max-w-5xl md:flex md:justify-between md:items-center">
+      <div className="container px-6 py-4 mx-auto max-w-6xl md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <Link href="/">
             <a className="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300">
