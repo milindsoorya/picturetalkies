@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <script
+          {/* <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
           />
@@ -20,7 +20,14 @@ class MyDocument extends Document {
             });
           `,
             }}
-          />
+          /> */}
+          <script
+            async
+            src="https://ackee.picturetalkies.in/tracker.js"
+            data-ackee-server="https://ackee.picturetalkies.in"
+            data-ackee-domain-id="6f332ffc-5694-4dd4-b239-ce8aaece6ef1"
+            data-ackee-opts='{"detailed": false, "ignoreLocalhost": true, "ignoreOwnVisits": false}'
+          ></script>
         </Head>
         <body className="bg-white dark:bg-black text-white dark:text-black">
           <Main />
