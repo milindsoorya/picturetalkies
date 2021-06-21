@@ -26,6 +26,7 @@ class MyDocument extends Document {
             src="https://ackee-analytics-orpin.vercel.app/tracker.js"
             data-ackee-server="https://ackee-analytics-orpin.vercel.app"
             data-ackee-domain-id="f82d35a6-5e5f-405d-85c2-3e9a58e33ad2"
+            data-ackee-opts='{"detailed": false, "ignoreLocalhost": true, "ignoreOwnVisits": false}'
           ></script>
         </Head>
         <body className="bg-white dark:bg-black text-white dark:text-black">
