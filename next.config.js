@@ -8,4 +8,12 @@ module.exports = {
     config.resolve.modules.push(path.resolve("./"));
     return config;
   },
+  async rewrites() {
+    return [
+      {
+        source: "/api/:path*",
+        destination: "https://ackee.picturetalkies.in/:path*",
+      },
+    ];
+  },
 };
