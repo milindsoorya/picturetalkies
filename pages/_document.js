@@ -23,9 +23,9 @@ class MyDocument extends Document {
           /> */}
           <script
             async
-            src="https://ackee-analytics-orpin.vercel.app/tracker.js"
-            data-ackee-server="https://ackee-analytics-orpin.vercel.app"
-            data-ackee-domain-id="f82d35a6-5e5f-405d-85c2-3e9a58e33ad2"
+            src="https://privacy-analytics.vercel.app/tracker.js"
+            data-ackee-server="https://privacy-analytics.vercel.app"
+            data-ackee-domain-id="5cf32097-6541-4774-a310-de2257d9cd9b"
             data-ackee-opts='{"detailed": false, "ignoreLocalhost": true, "ignoreOwnVisits": false}'
           ></script>
         </Head>
