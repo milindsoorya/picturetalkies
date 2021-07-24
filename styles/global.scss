@@ -148,4 +148,11 @@
     display: block;
     overflow-y: scroll;
   }
+
+  .button-svg {
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
 }

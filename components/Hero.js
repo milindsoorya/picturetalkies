@@ -3,7 +3,15 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="grid gap-10 row-gap-8 lg:grid-cols-5">
+      <MainPost
+        date="25 Jul 2021"
+        title="The fuss surrounding Mālik"
+        slug="the-fuss-surrounding-malik"
+        summary="Social media is all charged up discussing and defining the politics Mahesh Narayanan's latest movie Mālik conveys."
+        authorImg="/static/images/authors/jaisal.jpg"
+        authorName="Jaisal"
+      />
+      {/* <div className="grid gap-10 row-gap-8 lg:grid-cols-5">
         <MainPost
           date="20 Nov 2020"
           title="What it means when a man falls from outer space"
@@ -12,8 +20,8 @@ export default function Hero() {
         playfully subversive style is wholly her own."
           authorImg="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
           authorName="Petru Vîrtos"
-        />
-        <div className="flex flex-col space-y-8 lg:col-span-3">
+        /> */}
+      {/* <div className="flex flex-col space-y-8 lg:col-span-3">
           <SecondaryPost
             date="20 Nov 2020"
             title="Mascarpone cheese triangles taleggio"
@@ -33,8 +41,8 @@ export default function Hero() {
             authorImg="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
             authorName="Petru Vîrtos"
           />
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
     </div>
   );
 }

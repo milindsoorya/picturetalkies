@@ -9,7 +9,7 @@ export default function Navbar() {
     setMenu(!menu);
   };
   return (
-    <nav className="bg-white shadow dark:bg-gray-800 sticky-nav md:my-8 bg-opacity-60">
+    <nav className="bg-white shadow dark:bg-gray-800 sticky-nav md:mb-8 bg-opacity-60">
       <div className="container px-6 py-4 mx-auto max-w-6xl md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <Link href="/">

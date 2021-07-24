@@ -11,6 +11,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Inter", ...fontFamily.sans],
+        serif: ["Georgia", "Times New Roman", "serif"],
       },
       typography: (theme) => ({
         DEFAULT: {

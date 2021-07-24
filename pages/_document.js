@@ -5,7 +5,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* <script
+          <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
           />
@@ -20,14 +20,14 @@ class MyDocument extends Document {
             });
           `,
             }}
-          /> */}
-          <script
+          />
+          {/* <script
             async
             src="https://privacy-analytics.vercel.app/tracker.js"
             data-ackee-server="https://privacy-analytics.vercel.app"
             data-ackee-domain-id="5cf32097-6541-4774-a310-de2257d9cd9b"
             data-ackee-opts='{"detailed": true, "ignoreLocalhost": true, "ignoreOwnVisits": false}'
-          ></script>
+          ></script> */}
         </Head>
         <body className="bg-white dark:bg-black text-white dark:text-black">
           <Main />
