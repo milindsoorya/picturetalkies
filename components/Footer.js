@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
         <div className="flex flex-col space-y-4">
           <ExternalLink href="https://twitter.com/picturetalkies1">Twitter</ExternalLink>
-          <ExternalLink href="https://github.com/milindsoorya">GitHub</ExternalLink>
+          {/* <ExternalLink href="https://github.com/milindsoorya">GitHub</ExternalLink> */}
           <ExternalLink href="https://www.instagram.com/picturetalkies/?hl=en">
             Instagram
           </ExternalLink>
