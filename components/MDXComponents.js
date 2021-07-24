@@ -25,8 +25,20 @@ const CustomLink = (props) => {
   return <a target="_blank" rel="noopener noreferrer" {...props} />;
 };
 
+const NextImg = (props) => {
+  const { src, alt, disablePlaceholder } = props;
+  return (
+    <Image
+      src={require(`../public/static/images/${src}`)}
+      alt={alt}
+      placeholder={`${!disablePlaceholder && "blur"}`}
+    />
+  );
+};
+
 const MDXComponents = {
   Image,
+  NextImg,
   //   ImageWithTheme,
   a: CustomLink,
   //   Analytics,

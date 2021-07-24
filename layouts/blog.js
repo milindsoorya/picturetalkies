@@ -59,7 +59,7 @@ export default function BlogLayout({ children, frontMatter }) {
         </div>
         <div className="font-serif text-xl prose dark:prose-dark max-w-none w-full">{children}</div>
         <div className="mt-5 flex place-items-center space-x-4">
-          <button class="flex items-center px-3 py-1 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">
+          <button className="flex items-center px-3 py-1 tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-600 rounded-md dark:bg-gray-800 hover:bg-blue-500 dark:hover:bg-gray-700 focus:outline-none focus:bg-blue-500 dark:focus:bg-gray-700">
             <a
               href={`https://twitter.com/intent/tweet?url=${postUrl}&via=picturetalkies1&text=${encodedTitle}&hashtags=${hashTags}`}
               target="_blank"
